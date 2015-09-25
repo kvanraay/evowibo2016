@@ -159,6 +159,12 @@ header ul a strong {
   color:#222;
 }
 
+-  header, section, footer {
+-    float:none;
+-    position:static;
+-    width:auto;
+-  }
+
 section {
   width:500px;
   float:right;
