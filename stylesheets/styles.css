@@ -185,11 +185,11 @@ hr {
     margin:0;
   }
 
--  header, section, footer {
--    float:none;
--    position:static;
--    width:auto;
--  }
+  header, section, footer {
+    float:none;
+    position:static;
+    width:auto;
+  }
 
   header {
     padding-right:320px;
@@ -248,7 +248,6 @@ hr {
     color:#444;
   }
 }
-
 body {
     margin: 60px auto;
     width: 70%;
@@ -300,5 +299,3 @@ li {
     line-height: 1.4em;
     color: #303131;
 }
-
-
