@@ -1,3 +1,4 @@
+
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 body {
@@ -42,7 +43,7 @@ a {
 a small {
   font-size:11px;
   color:#777;
-  margin-top:-0.3em;
+  margin-top:-1em;
   display:block;
 }
 
@@ -100,16 +101,24 @@ header {
   width:270px;
   float:left;
   position:fixed;
- -webkit-font-smoothing:subpixel-antialiased;
+    -webkit-font-smoothing:subpixel-antialiased;
 }
 
 header ul {
   list-style:none;
   height:40px;
   padding:0;
-  background: #f4f4f4;
+  background: #eee;
+  background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+  background: -webkit-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+  background: -o-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+  background: -ms-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+  background: linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+
   border-radius:5px;
   border:1px solid #d2d2d2;
+  box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;
   width:270px;
 }
 
@@ -120,23 +129,14 @@ header li {
   height:40px;
 }
 
-
-header li:first-child a {
-  border-radius:5px 0 0 5px;
-}
-
-header li:last-child a {
-  border-radius:0 5px 5px 0;
-}
-
 header ul a {
   line-height:1;
   font-size:11px;
   color:#999;
   display:block;
   text-align:center;
-  padding-top:6px;
-  height:34px;
+  padding-top:2px;
+  height:40px;
 }
 
 strong {
@@ -177,13 +177,7 @@ hr {
   margin:0 0 20px;
 }
 
-footer {
-  width:270px;
-  float:left;
-  position:fixed;
-  bottom:50px;
-  -webkit-font-smoothing:subpixel-antialiased;
-}
+
 
 @media print, screen and (max-width: 960px) {
 
@@ -241,18 +235,12 @@ footer {
 @media print, screen and (max-width: 480px) {
   body {
     padding:15px;
-    margin: 60px auto;
-    width: 70%;
   }
-
 
   header ul {
-    width:99%;
+    display:none;
   }
-  header li, header ul li + li + li {
-    width:33%;
-  }
-
+}
 
 @media print {
   body {
@@ -260,6 +248,10 @@ footer {
     font-size:12pt;
     color:#444;
   }
+}
+body {
+    margin: 60px auto;
+    width: 70%;
 }
 
 nav {
@@ -299,7 +291,13 @@ p {
 
 
 
-
+footer {
+  width:270px;
+  float:left;
+  position:fixed;
+  bottom:50px;
+  -webkit-font-smoothing:subpixel-antialiased;
+}
 
 ul.posts { 
     margin: 20px auto 40px; 
@@ -315,3 +313,5 @@ li {
     line-height: 1.4em;
     color: #303131;
 }
+
+
