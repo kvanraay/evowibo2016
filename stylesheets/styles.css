@@ -258,7 +258,6 @@ nav ul {
     list-style: none;
     font-weight: bold;
     font-size:10pt
-    position:fixed;
 }
 nav ul li {
     display: inline;
