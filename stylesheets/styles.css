@@ -110,7 +110,6 @@ header ul {
   background: #f4f4f4;
   border-radius:5px;
   border:1px solid #d2d2d2;
-  box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;
   width:270px;
 }
 
@@ -121,14 +120,23 @@ header li {
   height:40px;
 }
 
+
+header li:first-child a {
+  border-radius:5px 0 0 5px;
+}
+
+header li:last-child a {
+  border-radius:0 5px 5px 0;
+}
+
 header ul a {
   line-height:1;
   font-size:11px;
   color:#999;
   display:block;
   text-align:center;
-  padding-top:2px;
-  height:40px;
+  padding-top:6px;
+  height:34px;
 }
 
 strong {
@@ -169,7 +177,13 @@ hr {
   margin:0 0 20px;
 }
 
-
+footer {
+  width:270px;
+  float:left;
+  position:fixed;
+  bottom:50px;
+  -webkit-font-smoothing:subpixel-antialiased;
+}
 
 @media print, screen and (max-width: 960px) {
 
@@ -230,9 +244,12 @@ hr {
   }
 
   header ul {
-    display:none;
+    width:99%;
   }
-}
+  header li, header ul li + li + li {
+    width:33%;
+  }
+
 
 @media print {
   body {
@@ -240,10 +257,6 @@ hr {
     font-size:12pt;
     color:#444;
   }
-}
-body {
-    margin: 60px auto;
-    width: 70%;
 }
 
 nav {
@@ -283,13 +296,7 @@ p {
 
 
 
-footer {
-  width:270px;
-  float:left;
-  position:fixed;
-  bottom:50px;
-  -webkit-font-smoothing:subpixel-antialiased;
-}
+
 
 ul.posts { 
     margin: 20px auto 40px; 
