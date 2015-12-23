@@ -252,6 +252,11 @@ body {
     margin: 60px auto;
     width: 70%;
 }
+
+nav {
+  margin-top: 2em;
+}
+
 nav ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
